@@ -4,37 +4,37 @@
     <title>Greenlake Dental - Patient Survey Form</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/styles.css" rel="stylesheet">
+    <link type="text/css" href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div>
+    <div class="container">
       <header>
         <h1 id="title">Greenlake Dental Patient Survey Form</h1> 
         <p id="description">
           Thank you for taking the time to help us improve our platform.
         </p>
       </header>
-      <div>
+      <div class="form-body">
         <form id="survey-form">
 
           <div class="form-group">
-            <label for="name-label">
-              Enter your name: <input type="text" name="name-label" 
-                id="name-label" required placeholder="Input your name.">
+            <label for="name" id="name-label">
+              Enter your name: <input type="text" name="name" 
+                id="name" required placeholder="Input your name.">
             </label>
           </div>
 
           <div class="form-group">
-            <label for="email-label">
-              Enter your email: <input type="email" name="email-label" required
-                id="email-label" placeholder="Input a valid email address.">
+            <label for="email" id="email-label">
+              Enter your email: <input type="email" name="email" required
+                id="email" placeholder="Input a valid email address.">
             </label>
           </div>
             
           <div class="form-group">
-            <label for="age-label">
-              Enter your age: <input type="number" name="age-label" 
-                min="5" max="90" id="age-label" required placeholder="Age">
+            <label for="number" id="number-label">
+              Enter your age: <input type="number" name="number" 
+                min="5" max="90" id="number" required placeholder="Age">
             </label>
           </div>
 
@@ -53,11 +53,13 @@
           <div class="form-group">
             <p class="radio-desc">Who was your attending dentist?</p>
             <label for="chang">
-              <input type="radio" name="dentist" id="chang" required>
+              <input type="radio" name="dentist" id="chang" value="dr-chang" 
+                required>
               Dr. Chang
             </label>
             <label for="hisako">
-              <input type="radio" name="dentist" id="hisako" required>
+              <input type="radio" name="dentist" id="hisako" value="dr-hisako" 
+                required>
               Dr. Hisako
             </label>
           </div>
@@ -89,7 +91,7 @@
           </div>
 
           <div class="form-group">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
           </div>
 
         </form>
